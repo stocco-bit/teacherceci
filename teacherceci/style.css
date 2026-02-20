@@ -1,0 +1,379 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+strong {
+  color: #6d28d9;
+}
+
+/* GERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  color: black;
+  line-height: 1.6;
+  padding-top: 64px;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+.topo-barra {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px; 
+
+  background: rgba(139, 92, 246, 0.95);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px; 
+  z-index: 1000;
+}
+
+
+.logo-link {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-link img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+
+ .hero {
+  max-width: 900px;
+  margin: 110px auto 0; 
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+
+  background-image:
+    linear-gradient(rgba(139,92,246,0.7), rgba(139,92,246,0.7)),
+    url("img/hero-ingles.jpg");
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+  position: relative;
+
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: white;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* SEÇÕES */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+  scroll-margin-top: 100px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #6d28d9;
+}
+
+/* SOBRE */
+.sobre p {
+  background: white;
+  padding: 25px;
+  border-left: 5px solid #B57EDC;
+  border-radius: 8px;
+  text-align: justify;
+  text-indent: 30px; 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+
+/* SERVIÇOS */
+.servicos ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.servicos li {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* CONTATO */
+.contato {
+  text-align: center;
+}
+
+button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #6d28d9;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  color: #536481;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+section {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #25d366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 999;
+
+  transition: 0.3s;
+}
+
+.whatsapp img {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .whatsapp span {
+    display: none;
+  }
+
+  .whatsapp {
+    padding: 15px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .topo-barra {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+
+#depoimentos p {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid #8b5cf6;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.logo img {
+  height: 45px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(139, 92, 246, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 45px;
+}
+
+/* NAV */
+.nav {
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.menu-toggle {
+  position: relative;
+  z-index: 10000;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE */
+ @media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+
+    background: #8b5cf6;
+    flex-direction: column;
+    width: 220px;
+    padding: 18px;
+
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+    z-index: 9999;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+}
+
+
