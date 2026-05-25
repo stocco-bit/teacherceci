@@ -5,29 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Aulas de inglês personalizadas para crianças, jovens e adultos, com foco na conversação e situações do dia a dia.">
   <title>Teacher Ceci English Course</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Fontes otimizadas: Playfair Display para títulos e Poppins para textos -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body id="topo">
 
-<header class="topo">
-  <a href="#topo" class="logo">
-    <img src="img/logo.jpeg" alt="Logo Teacher Ceci">
-  </a>
+<header class="topo-barra">
+  
+  <div class="logo-area">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logotipo oficial do curso de inglês Teacher Ceci English Course">
+    </div>
 
-  <nav class="nav">
-    <button class="menu-toggle" aria-label="Abrir menu">
-      ☰
-    </button>
+    <div class="nome-escola">
+      <h1>Teacher Ceci</h1>
+      <span>English Course</span>
+    </div>
+  </div>
 
-    <ul class="menu">
+  <nav>
+    <ul>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#diferenciais">Diferenciais</a></li>
       <li><a href="#depoimentos">Depoimentos</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contato" class="botao-contato">Contato</a></li>
     </ul>
   </nav>
+
 </header>
 
 <div class="hero">
@@ -38,14 +48,24 @@
 
 
   <section id="sobre" class="sobre">
-    <h2>Sobre as aulas</h2>
-     <p>
-    As aulas de inglês são desenvolvidas com foco no aluno, priorizando situações reais do dia a dia e o uso prático do idioma.
-    A metodologia valoriza a participação ativa, promovendo o desenvolvimento equilibrado das quatro habilidades essenciais:
-    <strong>reading, writing, listening e speaking</strong>.
-    O material utilizado é autêntico e atualizado, com apoio de vídeos, áudios reais e conteúdos em PDF, garantindo uma
-    experiência de aprendizado dinâmica, clara e eficiente.
-  </p>
+  <h2>Sobre as aulas</h2>
+  
+  <div class="sobre-container">
+    <div class="sobre-foto">
+      <!-- Substitua pelo caminho real da foto dela -->
+      <img src="img/teacher-ceci.jpg" alt="Professora Ceci sorrindo em sua sala de aula de inglês online">
+    </div>
+    
+    <div class="sobre-texto">
+      <p>
+        As aulas de inglês são desenvolvidas com foco no aluno, priorizando situações reais do dia a dia e o uso prático do idioma.
+        A metodologia valoriza a participação activa, promovendo o desenvolvimento equilibrado das quatro habilidades essenciais:
+        <strong>reading, writing, listening e speaking</strong>.
+        O material utilizado é autêntico e atualizado, com apoio de vídeos, áudios reais e conteúdos em PDF, garantindo uma
+        experiência de aprendizado dinâmica, clara e eficiente. Aulas 100% online ao vivo, no conforto da sua casa.
+      </p>
+    </div>
+  </div>
 </section>
 
   <section id="servicos" class="servicos">
@@ -69,7 +89,7 @@
 
  
 
-<section id="diferenciais" class="servicos">
+<section id="diferenciais" class="diferenciais">
   <h2>Diferenciais</h2>
   <ul>
     <li>
@@ -101,10 +121,52 @@
   </p>
 </section>
 
+<section id="faq" class="faq">
+  <h2>Perguntas Frequentes</h2>
+  
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <h3>Como funcionam as aulas?</h3>
+      </div>
+      <div class="faq-resposta">
+        <p>As aulas são totalmente personalizadas e focadas nos seus objetivos, seja para conversação, viagens ou ambiente profissional. O formato e os horários são combinados diretamente com você para se ajustarem à sua rotina.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <h3>As aulas são online ou presenciais?</h3>
+      </div>
+      <div class="faq-resposta">
+        <p>As aulas são 100% online e ao vivo, permitindo que você estude no conforto da sua casa ou de onde estiver, com total interação e aproveitamento em tempo real.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <h3>O material didático está incluso?</h3>
+      </div>
+      <div class="faq-resposta">
+        <p>Sim! Todo o material digital (arquivos em PDF, áudios e vídeos autênticos) já está totalmente incluso no valor do curso e é enviado aula a aula.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <h3>Como funciona a aula experimental?</h3>
+      </div>
+      <div class="faq-resposta">
+        <p>A aula experimental é uma oportunidade para você conhecer o método da Teacher Ceci, bater um papo para avaliar seu nível atual de inglês e alinhar suas expectativas, sem nenhum compromisso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contato" class="contato">
   <h2>Entre em contato</h2>
   <p>Agende uma aula ou tire suas dúvidas.</p>
-  <a href="https://wa.me/5511981328316" target="_blank">
+  <a href="https://wa.me/5511981328316?text=Ol%C3%A1%2C%20Teacher%20Ceci!%20Acessei%20o%20seu%20site%20e%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas%20sobre%20as%20aulas." target="_blank">
   <button>Ir para WhatsApp</button>
 </a>
 
@@ -117,8 +179,8 @@
 
   
   <script src="script.js"></script>
-  <a href="https://wa.me/5511981328316" class="whatsapp" target="_blank">
-  <img src="img/whatsapp.svg" alt="WhatsApp">
+  <a href="https://wa.me/5511981328316?text=Ol%C3%A1%2C%20Teacher%20Ceci!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." class="whatsapp" target="_blank">
+  <img src="img/whatsapp.svg" alt="Ícone do WhatsApp para contato e agendamento de aulas de inglês">
   <span>Agende já sua aula experimental</span>
 </a>
 </body>
