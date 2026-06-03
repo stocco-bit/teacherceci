@@ -49,6 +49,10 @@ p {
   z-index: 1000;
 }
 
+h1, h2 {
+    font-family: 'Nunito', sans-serif;
+}
+
 .logo-area {
   display: flex;
   align-items: center;
@@ -72,7 +76,7 @@ p {
 }
 
 .nome-escola h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 2.2rem;
   margin: 0;
   line-height: 1.1;
@@ -171,7 +175,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 2.6rem;
   margin-bottom: 20px;
   line-height: 1.2;
@@ -196,7 +200,7 @@ section {
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 2.2rem;
   margin-bottom: 30px;
   color: #6d28d9;
@@ -279,7 +283,6 @@ h2 {
   color: #1a2530;
   margin-bottom: 12px;
 }
-
 .diferenciais {
   background-color: #f4f6f8;
   max-width: 100%;
@@ -288,13 +291,45 @@ h2 {
 }
 
 /* Depoimentos */
-#depoimentos p {
+.depoimento:hover {
   background: white;
   padding: 25px;
   margin-bottom: 20px;
   border-left: 4px solid #8b5cf6;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.perfil img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #8b5cf6;
+}
+
+.perfil h4 {
+  margin: 0;
+  color: #8b5cf6;
+}
+
+.perfil span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.depoimento p {
+  margin: 0;
+  line-height: 1.7;
 }
 
 /* ==========================================
