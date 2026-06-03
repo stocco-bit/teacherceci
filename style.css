@@ -536,3 +536,21 @@ footer {
     max-width: 200px; /* Foto um pouco menor no celular */
     margin: 0 auto;
   }
+
+  .redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.redes-sociais a {
+  color: #333;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #8b5cf6;
+  transform: scale(1.15);
+}
