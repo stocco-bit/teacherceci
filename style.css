@@ -289,6 +289,12 @@ h2 {
   padding-left: calc((100% - 950px)/2 + 20px);
   padding-right: calc((100% - 950px)/2 + 20px);
 }
+.diferenciais ul,
+.diferenciais li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 /* Depoimentos */
 .depoimento:hover {
@@ -553,4 +559,19 @@ footer {
 .redes-sociais a:hover {
   color: #8b5cf6;
   transform: scale(1.15);
+}
+
+.check-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #0f5c7d;
+}
+
+.check-title::before {
+    content: "✓";
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+    color: #0f5c7d;
 }
