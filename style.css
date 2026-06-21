@@ -656,6 +656,26 @@ footer {
 }
 
 
+/* Centraliza o ícone do Instagram horizontalmente */
+.redes-sociais {
+  display: flex;
+  justify-content: center; /* Alinha no centro da tela */
+  margin-top: 50px;        /* Dá um espaço para não grudar no botão do WhatsApp */
+  width: 100%;             /* Garante que a div ocupe a largura toda da página */
+}
 
+/* Controla o tamanho e a cor do ícone do Font Awesome */
+.redes-sociais a {
+  font-size: 28px;         /* Aumenta um pouco o tamanho do ícone */
+  color: #6a1b9a;          /* Altera a cor (coloquei o roxo do seu botão, mude se preferir) */
+  text-decoration: none;   /* Remove qualquer sublinhado padrão de links */
+  transition: color 0.3s, transform 0.2s; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito visual quando o usuário passa o mouse por cima */
+.redes-sociais a:hover {
+  color: #e1306c;          /* Muda para a cor clássica do Instagram */
+  transform: scale(1.15);  /* Dá um leve zoom */
+}
 
 
